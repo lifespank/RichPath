@@ -25,7 +25,7 @@ object PathParserCompatApi21 {
 
     private fun getCreatePathFromPathDataMethod(): Method? {
         try {
-            return Class.forName("android.util.PathParser")
+            return Class.forName("androidx.core.graphics.PathParser")
                     .getDeclaredMethod("createPathFromPathData", String::class.java)
         } catch (e: ClassNotFoundException) {
             e.printStackTrace()

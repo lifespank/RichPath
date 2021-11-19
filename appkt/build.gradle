@@ -3,6 +3,20 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\lifespank\\StudioProjects\\RichPath\\key.jks')
+            storePassword 'richpath'
+            keyAlias 'key0'
+            keyPassword 'richpath'
+        }
+        release {
+            storeFile file('C:\\Users\\lifespank\\StudioProjects\\RichPath\\key.jks')
+            storePassword 'richpath'
+            keyAlias 'key0'
+            keyPassword 'richpath'
+        }
+    }
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
